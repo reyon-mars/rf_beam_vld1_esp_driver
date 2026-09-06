@@ -4,7 +4,6 @@
 #include "esp_log.h"
 #include "esp_err.h"
 #include <cstring>
-
 #include <cstddef>
 #include <cstdint>
 

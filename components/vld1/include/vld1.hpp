@@ -157,7 +157,7 @@ public:
 
     vld1(uart &uart_no) noexcept;
 
-    radar_params_t get_curr_radar_params(void) const noexcept { return vld1_config_; };
+    [[nodiscard]] radar_params_t get_curr_radar_params(void) const noexcept { return vld1_config_; };
 
     vld1_error_code_t init(const vld1_baud_t baud = vld1_baud_t::BAUD_115200) noexcept;
 
